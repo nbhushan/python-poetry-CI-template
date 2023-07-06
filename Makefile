@@ -18,15 +18,15 @@ setup: initialize_git install activate setup_precommit
 
 test:
 	@echo "Running tests"
-	pytest
+	poetry run pytest
 
 testcov:
 	@echo "Generating test coverage"
-	pytest --cov tests/
+	poetry run pytest --cov tests/
 
 precommit:
 	@echo "Running Pre-commit"
-	pre-commit run --all-files
+	poetry run pre-commit run --all-files
 
 ## Delete all compiled Python files
 clean:
