@@ -28,12 +28,6 @@ jobs:
     - name: Install dependencies
       run: make install
       
-  test:
-  
-    needs: build
-    runs-on: ubuntu-latest
-  
-    steps:
     - name: Run tests
       run: make test
 
