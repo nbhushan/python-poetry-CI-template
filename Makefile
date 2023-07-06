@@ -24,6 +24,10 @@ testcov:
 	@echo "Generating test coverage"
 	poetry run pytest --cov 
 
+format:
+	@echo "Formatting code using Black"
+	poetry run black hello_world.py
+
 precommit:
 	@echo "Running Pre-commit"
 	poetry run pre-commit run --all-files
