@@ -14,6 +14,17 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Set up python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '^3.10'
+
+    - name: Install Poetry
+      uses: snok/install-poetry@v1
+      with:
+        virtualenvs-create: true
+        virtualenvs-in-project: true
+
     - name: Install dependencies
       run: make setup
 
@@ -22,3 +33,4 @@ jobs:
 
     - name: Run test coverage
       run: make testcov
+      
