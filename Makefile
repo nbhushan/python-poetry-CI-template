@@ -22,7 +22,7 @@ test:
 
 testcov:
 	@echo "Generating test coverage"
-	poetry run pytest --cov tests/
+	poetry run pytest --cov 
 
 precommit:
 	@echo "Running Pre-commit"
