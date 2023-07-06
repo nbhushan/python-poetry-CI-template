@@ -34,3 +34,6 @@ jobs:
     - name: Run test coverage
       run: make testcov
       
+    - name: Clean up
+      run: make clean
+      
