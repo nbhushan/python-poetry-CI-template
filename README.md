@@ -1,2 +1,2 @@
 # python-poetry-CI-template
-cookiecutter to build python (data science) projects
+template repo to build python projects
