@@ -26,7 +26,7 @@ testcov:
 
 format:
 	@echo "Formatting code using Black"
-	poetry run black hello_world.py
+	poetry run black hello_world_app.py
 
 precommit:
 	@echo "Running Pre-commit"
