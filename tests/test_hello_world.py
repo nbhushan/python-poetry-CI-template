@@ -1,4 +1,4 @@
-from hello_world import display_name
+from hello_world_app import display_name
 
 
 def test_display_name():
